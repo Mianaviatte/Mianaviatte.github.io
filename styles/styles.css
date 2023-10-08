@@ -1,10 +1,10 @@
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
-    --accent-color: #888888;
+    --accent-color: #7441a8;
     --primary-white-color: #ffffff;
-    --secondary-white-color: #e8e7f2d6;
-    --text-shadow-color: rgba(255, 255, 255, 0.285);
+    --secondary-white-color: #ecd4f5d6;
+    --text-shadow-color: rgba(110, 51, 86, 0.285);
   }
 
 * {
@@ -349,8 +349,7 @@ nav > ul {
 .hero {
     position: relative;
     height: 20em;
-    background-image: url("https://source.unsplash.com/random/1280x1024");  /* 1200 is the width: 1200px of background */
-    background-size: cover;
+    background: indigo;
     margin-bottom: 8%;
   }
 
