@@ -1,0 +1,392 @@
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color: #888888;
+    --primary-white-color: #ffffff;
+    --secondary-white-color: #e8e7f2d6;
+    --text-shadow-color: rgba(255, 255, 255, 0.285);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.background {
+    background-color: var(--secondary-white-color);
+    width: 1200px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+img {
+    object-fit: contain;
+}
+
+/* Extra small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    h5, p {
+        font-size: 3vw;
+    }
+
+    ol > li {
+        font-size: 3vw;
+    }
+
+    ul > li {
+        font-size: 3vw;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 420px and up) */
+@media only screen and (min-width: 420px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    h5, p {
+        font-size: 2vw;
+    }
+
+    ol > li {
+        font-size: 2vw;
+    }
+
+    ul > li {
+        font-size: 2vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        margin: auto;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: auto ;
+        width: 75%;
+    }
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+    body {
+        margin: auto ;
+        width: 70%;
+    }
+
+    h1 {
+        font-size: xxx-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    h5, p {
+        font-size: small;
+    }
+
+    ol > li {
+        font-size: small;
+    }
+
+    ul > li {
+        font-size: small;
+    }
+}
+
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    background-color: var(--text-shadow-color);
+    margin: 4% 0;
+    max-width: 60%;
+    padding: 4%;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    max-width: 80%;
+    margin: 4% 0;
+    max-width: 80%;
+    padding: 2%;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 1%;
+    max-width: 80%;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 1%;
+    max-width: 80%;
+}
+
+h5, p {
+    font-style: normal;
+    font-weight: 400;
+    max-width: 80%;
+    line-height: 160%;
+    margin: 3% 0;
+    padding-left: 3%;
+}
+
+ol, ul {
+    margin-top: 3%;
+}
+
+ol > li {
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 8%;
+    max-width: 80%;
+    line-height: 160%;
+}
+
+ul > li {
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 8%;
+    max-width: 80%;
+    line-height: 160%;
+}
+
+a {
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 3%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--accent-color);
+    padding: 2%;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 3% 4%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .topnav li:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+  }
+
+  .topnav .login.active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+
+.login {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 3% 4%;
+    list-style: none;
+}
+
+.register {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    text-align: center;
+    padding: 3% 4%;
+    list-style: none;
+}
+
+.hero {
+    position: relative;
+    height: 20em;
+    background-image: url("https://source.unsplash.com/random/1280x1024");  /* 1200 is the width: 1200px of background */
+    background-size: cover;
+    margin-bottom: 8%;
+  }
+
+
+.hero .join {
+    position: absolute;
+    left: 45%;
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    text-align: center;
+    padding: 3% 4%;
+    margin: 2% auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .join:hover {
+    background-color: var(--secondary-white-color)
+}
+
+.italic {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: larger;
+}
+
+footer {
+    background-color: var(--accent-color);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+}
+
+address > ul {
+    list-style: none;
+}
