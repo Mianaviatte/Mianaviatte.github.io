@@ -1,38 +1,48 @@
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
-    --accent-color: #7441a8;
+    --text-shadow-color: #A8A8A8;
+    --accent-color: #FB6D3A;
+    --secondary-accent-color: #6284b8;
     --primary-white-color: #ffffff;
-    --secondary-white-color: #ecd4f5d6;
-    --text-shadow-color: rgba(110, 51, 86, 0.285);
   }
 
-* {
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-orient: horizontal;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-main {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.background {
-    background-color: var(--secondary-white-color);
-    width: 1200px;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+aside {
+    min-width: 24%;
+    max-width: 36%;
+    height: 100%;
+    padding-top: 2em;
+    margin-left: 4%;
+    position: sticky;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:var(--title-text-color);
 }
 
 img {
-    object-fit: contain;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Extra small devices (phones, 420px and down) */
@@ -226,25 +236,24 @@ img {
 h1 {
     font-style: normal;
     font-weight: 700;
-    line-height: 55px;
-    background-color: var(--text-shadow-color);
-    margin: 4% 0;
-    max-width: 60%;
-    padding: 4%;
+    color: var(--primary-text-color);
+    margin: 6% 0;
+    max-width: 80%;
 }
 
 h2 {
     font-style: normal;
     font-weight: 700;
-    max-width: 80%;
+    line-height: 1.5;
+    color: var(--primary-text-color);
     margin: 4% 0;
     max-width: 80%;
-    padding: 2%;
 }
 
 h3 {
     font-style: normal;
     font-weight: 700;
+    color: var(--primary-text-color);
     padding-bottom: 1%;
     max-width: 80%;
 }
@@ -252,17 +261,26 @@ h3 {
 h4 {
     font-style: normal;
     font-weight: 700;
+    color: var(--primary-text-color);
     padding-bottom: 1%;
     max-width: 80%;
 }
 
-h5, p {
+h5 {
     font-style: normal;
     font-weight: 400;
+    color: #A8A8A8;
+    padding: 1% 0;
+    max-width: 80%;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-shadow-color);
     max-width: 80%;
     line-height: 160%;
     margin: 3% 0;
-    padding-left: 3%;
 }
 
 ol, ul {
@@ -272,6 +290,7 @@ ol, ul {
 ol > li {
     font-style: normal;
     font-weight: 700;
+    color: var(--primary-text-color);
     margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
@@ -280,112 +299,122 @@ ol > li {
 ul > li {
     font-style: normal;
     font-weight: 400;
+    color: var(--text-shadow-color);
     margin-left: 8%;
     max-width: 80%;
     line-height: 160%;
 }
 
-a {
+a, span {
     font-style: normal;
     font-weight: 400;
-    padding-left: 3%;
+    color: var(--text-shadow-color);
 }
 
-nav {
+/* class typed styles */
+
+.background {
+    background-color: var(--primary-white-color);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--accent-color);
-    padding: 2%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4%;
+    width: 100%;
 }
 
-nav > ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.main {
+    min-width: 60%;
+    max-width: 90%;
+    height: 100%;
+    padding-bottom: 2em;
 }
 
-.topnav {
-    overflow: hidden;
-  }
+.avatar {
+    margin: auto;
+    margin-bottom: 2em;
+    max-width: 80%;
+    border-radius: 50%;
+    box-shadow: -2rem -1rem 5rem rgb(255, 255, 255, .7);
+}
 
-  .topnav a {
-    float: left;
-    color: var(--primary-text-color);
-    text-align: center;
-    padding: 3% 4%;
-    text-decoration: none;
+#moon {
+ margin-top: 10%;
+}
+
+.about {
+    padding-top: 12%;
+    padding-bottom: 2%;
+}
+
+.about > .contacts {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 2%;
+   margin: 2% 0;
+}
+
+.projects, .work, .company, .education {
+    padding: 2% 0;
+}
+
+.company > p {
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+.organization {
     font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-  }
-
-  .topnav li:hover {
+    font-weight: 700;
     color: var(--accent-color);
-    background-color: var(--primary-white-color);
-  }
+}
 
-  .topnav .login.active {
+.education > .company > h4 {
+    color: var(--accent-color);
+}
+
+.education > .company > p {
+    margin: 1% 0;
+}
+
+.sidebar {
+    padding-top: 2%;
+    padding-left: 2%;
+    margin-bottom: 6%;
+}
+
+.sidebar > h3 {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
-  }
+    padding-left: 2%;
+}
 
-.login {
+.sidebar > div {
+  margin: 5%;
+}
+
+#intro {
+    max-width: 90%;
+    text-align: left;
+    margin: 6% 0;
+}
+
+.sidebar > div > p {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    text-align: center;
-    padding: 3% 4%;
-    list-style: none;
+    padding-top: 1%;
+    max-width: 80%;
 }
 
-.register {
+.sidebar > div > p > a, a {
+    color: var(--secondary-accent-color);
+    max-width: 80%;
+}
+
+.sidebar > ul > li {
     color: var(--accent-color);
-    background-color: var(--primary-white-color);
-    text-align: center;
-    padding: 3% 4%;
-    list-style: none;
 }
 
-.hero {
-    position: relative;
-    height: 20em;
-    background: indigo;
-    margin-bottom: 8%;
-  }
-
-
-.hero .join {
-    position: absolute;
-    left: 45%;
-    color: var(--accent-color);
-    background-color: var(--primary-white-color);
-    text-align: center;
-    padding: 3% 4%;
-    margin: 2% auto;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hero .join:hover {
-    background-color: var(--secondary-white-color)
-}
-
-.italic {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: larger;
-}
-
-footer {
-    background-color: var(--accent-color);
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-
-}
-
-address > ul {
-    list-style: none;
+.sidebar > ul > li > span {
+    color: var(--primary-white-color);
 }
