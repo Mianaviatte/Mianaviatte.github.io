@@ -1,8 +1,10 @@
 # Mianaviatte.github.io
 
-* mobile-friendly
-* responsive design
-* useful links attached as badges
-* sticky sidebar and main content
-* my own illustration as avatar and favicon
-* future projects will be added soon
+* 📱 mobile-friendly & responsive design 
+* 💻 sticky sidebar and dynamic main content 
+
+* ✅ useful links attached as badges 
+* ✅ my own illustration as favicon 
+
+* ✅ community involvement & interests added 
+* ♻️ future projects will be added soon 
